@@ -1,0 +1,59 @@
+<html>
+<head>
+<center>
+<h1>Welcome To Abdul's Recipes</h1>
+<hr/>
+</center>
+</head>
+<title>Abduls recipes</title>
+<body>
+<u><h2>CRISPY CORN RECIPE:</h2></u>
+<p>
+Crispy Corn is a famous recipe of Barbeque Nation made with corn kernels, coated with a thin batter  and then deep fried . Added masala coats the corn kernels well and add nice flavor and spice to the recipe.An interesting and popular fried snack recipe made with corn kernels and indo chinese sauces. the recipe was first introduced in the menu of restaurant chain barbeque nation as starter meal. but now it has been accepted by many other restaurant chains and also by several street foods and fast food vendors.<hr/>
+</p>
+<br>
+<u><h2>Ingredients:</h2></u>
+<ul>
+<li>Corn Kernels</li>
+<img src="D:\Softura\training Day 1\task1\Corn Kernels.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>Rice flour</li>
+<img src="D:\Softura\training Day 1\task1\rice-flour.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>Corn flour</li>
+<img src="D:\Softura\training Day 1\task1\Corn flour.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>Salt</li>
+<img src="D:\Softura\training Day 1\task1\salt.jpg"alt="Finalimg"Height="100"width=150"/>
+<li>Pepper</li>
+<img src="D:\Softura\training Day 1\task1\pepper.jfif"alt="Finalimg"Height="100"width="150"/>
+<li>Chili powder</li>
+<img src="D:\Softura\training Day 1\task1\chili-powder-.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>Cumin powder</li>
+<img src="D:\Softura\training Day 1\task1\cumin powder.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>Chat masala</li>
+<img src="D:\Softura\training Day 1\task1\chat masala.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>Lemon juice</li>
+<img src="D:\Softura\training Day 1\task1\lemon-juice.jpg"alt="Finalimg"Height="100"width="150"/>
+<li>chopped Onion</li>
+<img src="D:\Softura\training Day 1\task1\chopped-red-onion-.png"alt="Finalimg"Height="100"width="150"/>
+<li>chopped coriander leaves</li>
+<img src="D:\Softura\training Day 1\task1\chopped coriander.jfif"alt="Finalimg"Height="100"width="150"/>
+</ul><hr/>
+<u><h2>Making Process:</h2></u>
+<p>
+Step 1) Into a sauce pan boil water and add corn kernels and boil for 2 min. Strain and let it sit for 5 min.<br>
+Step 2) Then add rice flour, corn flour, little salt and pepper. Add more corn flour if required. Then deep fry it in oil.
+<br>
+Step 3) Then add masalas- Chili powder, chat masala,cumin powder,salt and pepper. Finally squeeze in some lemon juice . Give it a good shake<br>
+Step 4) Finally garnish with chopped coriander leaves, chopped Onion and a lemon wedge on top.<br> 
+<center>
+<img src="D:\Softura\training Day 1\task1\Finalimg.JPG"alt="Finalimg"Height="300"width="550"/><br>
+</center>
+<p>
+<center>
+<h3>"Our delicious Spicy masala diamond cuts are ready to be enjoyed. Happy Cooking!!!"</h3>
+<h3>Thank You For Visiting The Site</h3>
+</center>
+</p>
+</p>
+
+<body>
+</html>
