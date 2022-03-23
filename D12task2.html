@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+    function validateForm() {
+        var fn = document.forms["myForm"].value;
+    if (fn == "") {
+
+    alert("Enter your name");
+    return false;
+        }
+        else
+        alert("Enter all details")
+    }
+    </script>
+</head>
+<body>
+   
+        <i>
+            <b>
+                <h1 align="center" style=color:black>APPLICATION FORM</h1>
+            </b>
+        </i>
+  
+    <form name="myform" action="success.html" method="post" onsubmit="validateForm()" >
+        <ol>
+            <li>
+                <label><b>First name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+                <input type="text" name="fname" required>
+            </li>
+            <br />
+            <li>
+                <label><b>Last name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+                <input type="text" name="lname" required>
+            </li>
+           
+            <li>
+                <label>
+                    <b>
+                        Gender:<label>
+                    </b>
+                    <input type="radio" name="gen" value="Male" /><label>Male</label>
+                    <input type="radio" name="gen" value="Female" /><label>Female</label>
+</li>
+            <br />
+            <li>
+                <label><b>Religin:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+                <input type="text" name="reg">
+            </li>
+            <br />
+            <li>
+                <label><b>Nationality:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+                <input type="text" name="nationality" required>
+            </li>
+            <br />
+            
+            <li>
+                <label><b>Permanant Location:</b></label>
+                <input type="text" name="location" required>
+            </li>
+            <br />
+            <li>
+                <label><b>Current Location:&nbsp&nbsp&nbsp&nbsp&nbsp</b></label>
+                <input type="text" name="Location" required>
+            </li>
+            <br />
+            <li>
+                <table>
+                    <tr>
+                        <td rowspan="3">
+                            <label><b>Qualification:</b></label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="" value="BE">
+                            <label>BE</label><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="" value="B Tech">
+                            <label>B Tech</label><br />
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            
+            <li>
+                <label><b>Language Known:</b></label>
+                <input type="text" name="Language" required>
+            </li>
+            <br />
+            <a herf="https://dytcjf6nyxl07.cloudfront.net/1182/2352/tnc_1.pdf">
+                <input type="checkbox" name="box"><label><b>I Agree This Terms and Conditions</b></label>
+            </a>
+            <br />
+            <br />
+            <center>
+                <input type="submit" value="Register" onclick="validateForm()"/>
+                <input type="submit" value="Cancel">
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">var attempts = 3;
+function check_form()
+{
+ var name=document.getElementById("name").value;
+ var pass=document.getElementById("pass").value;
+    if (name == "Abdul" && pass == "1234") {
+        alert("SuccessFully Logged In");
+        document.getElementById("name").value = "";
+        document.getElementById("pass").value = "";
+    }
+    else {
+        if (attempts == 0) {
+            alert("No Login Attempts Available");
+        }
+        else {
+            attempts = attempts - 1;
+            alert("Login Failed  " + attempts + " Login Attempts Available");
+            if (attempts == 0) {
+                document.getElementById("name").disabled = true;
+                document.getElementById("pass").disabled = true;
+                document.getElementById("form1").disabled = true;
+            }
+        }
+    }
+
+ return false;
+}</script>
+</head>
+<body>
+    <div>
+
+        <form id="form1" method="post" action="" onsubmit="return check_form();">
+            <p id="login_label"><b>Login Creditionals</b></p>
+            <input type="text" id="name" placeholder= "Username">
+            <br>
+            <input type="password" id="pass" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+            <br>
+        </form>
+
+    </div>
+
+</body>
+</html>
