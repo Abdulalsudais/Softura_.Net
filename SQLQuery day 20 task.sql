@@ -22,15 +22,9 @@ select * from view_table
 
 
 -- task 4
-create table HR_Department
-(
-EmptID int identity(2001,1),
-EmpFname varchar(20),
-EmpLname varchar(50),
-)
-insert HR_Department values ('Abdul','Alsudais')
-select * from HR_Department
-
+select * into HR_dept
+from [HumanResources].[Department]
+select * from HR_dept
 
 
 
