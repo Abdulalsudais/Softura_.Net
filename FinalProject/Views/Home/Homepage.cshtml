@@ -1,0 +1,65 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ }
+<body>
+
+    <h1>Stone Clinic </h1>
+
+
+    <h3>Navigation menu</h3>
+    <center>  <h1> Information Page </h1></center>
+    <center>
+        <table class="table">
+            @using (Html.BeginForm("DoctorAdd", "Home", FormMethod.Post))
+
+            {
+<tr>
+    <td>
+        <input type="submit" name="AddDoctor" value="Add a new Doctor" />
+    </td>
+</tr>
+}
+        </table>
+    </center>
+    <center>
+        <table class="table">
+            @using (Html.BeginForm("PatientAdd", "Home", FormMethod.Post))
+
+            {
+<tr>
+    <td>
+        T<input type="submit" name="PatientAdd" value="Add a new Patient" />
+    </td>
+</tr>
+}
+        </table>
+    </center>
+    <center>
+        <table class="table">
+            @using (Html.BeginForm("Scheduleapp", "Home", FormMethod.Post))
+
+            {
+<tr>
+    <td>
+        To schedule appointment click here to Continue <input type="submit" name="Scheduleapp" />
+    </td>
+</tr>
+}
+        </table>
+    </center>
+    <center>
+        <table class="table">
+            @using (Html.BeginForm("Viewappoint", "Home", FormMethod.Post))
+
+            {
+<tr>
+    <td>
+        To View appointment click here to Continue <input type="submit" name="View appointments" />
+    </td>
+</tr>
+}
+        </table>
+    </center>
+
+</body>

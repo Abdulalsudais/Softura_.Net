@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model ClinicManagement.Models.Doctor
+
+<head>
+</head>
+<body>
+   
+    <table border="1" cellpadding="10">
+        @using (Html.BeginForm("InsertDoctor", "Home", FormMethod.Post))
+        {
+            <tr >
+                <th colspan="2"><center>Doctor Details</center></th>
+
+            </tr>
+            <tr>
+                <td><b>First Name:</b></td>
+                <td>@Html.TextBoxFor(m => m.FirstName)</td>
+            </tr>
+            <tr>
+                <td><b>Last Name</b></td>
+                <td>@Html.TextBoxFor(m => m.LastName)</td>
+            </tr>
+            <tr>
+                <td><b>Sex:</b></td>
+                <td>@Html.RadioButtonFor(m => m.Sex, "Male")Male<hr />
+                @Html.RadioButtonFor(m => m.Sex, "Female")Female<hr />
+                
+                @Html.RadioButtonFor(m => m.Sex, "Others")Others</td>
+            </tr>
+            <tr rowspan="6" border="1">
+                <td><b>Specialisation:</b></td>
+            
+            <td>@Html.RadioButtonFor(m => m.Specialization, "General")General<hr />
+            
+                @Html.RadioButtonFor(m => m.Specialization, "Internal Medicine")Internal Medicine<hr />
+            
+            
+               @Html.RadioButtonFor(m => m.Specialization, "Pediatrics") Pediatrics<hr />
+            
+            
+                @Html.RadioButtonFor(m => m.Specialization, "Orthopedics") Orthopedics<hr />
+            
+            
+                @Html.RadioButtonFor(m => m.Specialization, "Opthalmology") Ophthalmology</td>
+            </tr>
+            
+            <tr>
+                <td><b>Visiting:</b></td>
+                <td>@Html.TextBoxFor(m => m.VisitingHours)</td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2"><center><input type="submit" value="Submit" /></center></td>
+            </tr>
+
+            }
+        </table>
+</body>
