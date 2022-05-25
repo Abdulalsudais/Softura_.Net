@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ }
+@model IEnumerable<ClinicManagement.Models.Schedules>
+<body>
+    <table class="table">
+
+        <tr>
+
+            <th>@Html.DisplayName("AppointmentID")</th>
+            <th>@Html.DisplayName("Patient")</th>
+            <th>@Html.DisplayName("Specializations")</th>
+            <th>@Html.DisplayName("DoctorName")</th>
+            <th>@Html.DisplayName("VisitDate")</th>
+            <th>@Html.DisplayName("AppointmentTime")</th>
+        </tr>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+<tr>
+    <td>
+        @Html.DisplayFor(modelitem => item.AppointmentID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelitem => item.patientName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelitem => item.Specializations)
+    </td>
+    <td>
+        @Html.DisplayFor(modelitem => item.DoctorName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelitem => item.VisitDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelitem => item.AppointmentTime)
+    </td>
+    <td>
+        <a asp-action="CancelAppmnt" asp-route-id="@item.AppointmentID">Cancel Appointment</a>
+    </td>
+</tr>
+       }
+        </tbody>
+        <tr>
+            <td>
+                <input type="button" value="Home" onclick="location.href = '@Url.Action("HomePage","Home")'" class="btn btn-primary" />
+            </td>
+            <td>
+                <input type="button" value="Log-out" onclick="location.href = '@Url.Action("Index","Home")'" class="btn btn-danger" />
+            </td>
+        </tr>
+    </table>
+</body>

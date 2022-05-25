@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+                @model ClinicManagement.Models.Patient
+}
+<table>
+    @using (Html.BeginForm("InsertPatient", "Home", FormMethod.Post))
+    {
+<tr>
+    <th colspan="2"><center>Patient Details</center></th>
+
+</tr>
+                <tr>
+                    <td><b>First Name:</b></td>
+                    <td>@Html.TextBoxFor(m => m.FirstName)</td>
+                </tr>
+                                <tr>
+                                    <td><b>Last Name</b></td>
+                                    <td>@Html.TextBoxFor(m => m.LastName)</td>
+                                </tr>
+                                                <tr>
+                                                    <td><b>Sex:</b></td>
+                                                    <td>
+                                                        @Html.RadioButtonFor(m => m.Sex, "Male")Male<hr />
+                                                        @Html.RadioButtonFor(m => m.Sex, "Female")Female<hr />
+
+                                                        @Html.RadioButtonFor(m => m.Sex, "Others")Others
+                                                    </td>
+                                                </tr>
+                                                                <tr>
+                                                                    <td><b>Age</b></td>
+                                                                    <td>@Html.TextBoxFor(m => m.Age)</td>
+                                                                </tr>
+                                                                                <tr>
+                                                                                    <td><b>Date Of Birth</b></td>
+                                                                                    <td>@Html.TextBoxFor(m => m.DateofBirth)</td>
+                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td><input type="submit" value="Submit" /></td>
+                                                                                                </tr>}
+</table>

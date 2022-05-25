@@ -1,0 +1,34 @@
+﻿@{
+                @model ClinicDeskApplication.Models.Users
+                ViewData["Title"] = "Login"; }
+
+
+
+<html>
+<head>
+</head>
+<body>
+
+
+    <h1>Stone Clinic </h1>
+    <h2> Login using your credentials </h2>
+
+    <center>
+        <table>
+            @using (Html.BeginForm("Validate", "Home", FormMethod.Post))
+            {
+<tr>
+    <td>Username:</td>
+    <td><input type="text" name="UserName" required /></td>
+</tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="Password" required /></td>
+                </tr>
+                                <tr>
+                                    <td><input type="submit" value="Login" /></td>
+                                </tr>            }
+        </table>
+    </center>
+</body>
+</html>

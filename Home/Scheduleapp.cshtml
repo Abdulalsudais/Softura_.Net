@@ -1,0 +1,83 @@
+﻿@model ClinicManagement.Models.Schedules
+
+@{ ViewData["Title"] = "Scheduleapp"; }
+@using (Html.BeginForm("Addschedule", "Home", FormMethod.Post))
+{
+<h1>Scheduleapp</h1>
+
+                <h4>Schedules</h4>
+                                <hr />
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <form asp-action="Scheduleapp">
+                                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                                            <table cellpadding="5">
+                                                                <tr rowspan="6">
+                                                                    <td><b>Specialisation:</b></td>
+
+                                                                    <td>
+                                                                        @Html.RadioButtonFor(m => m.Specializations, "General")General<hr />
+
+                                                                        @Html.RadioButtonFor(m => m.Specializations, "Internal Medicine")Internal Medicine<hr />
+
+
+                                                                        @Html.RadioButtonFor(m => m.Specializations, "Pediatrics") Pediatrics<hr />
+
+
+                                                                        @Html.RadioButtonFor(m => m.Specializations, "Orthopedics") Orthopedics<hr />
+
+
+                                                                        @Html.RadioButtonFor(m => m.Specializations, "Opthalmology") Ophthalmology
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="form-group">
+                                                                <label asp-for="DoctorName" class="control-label"></label>
+                                                                <input asp-for="DoctorName" class="form-control" />
+                                                                <span asp-validation-for="DoctorName" class="text-danger"></span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label asp-for="patientName" class="control-label"></label>
+                                                                <input asp-for="patientName" class="form-control" />
+                                                                <span asp-validation-for="patientName" class="text-danger"></span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label asp-for="VisitDate" class="control-label"></label>
+                                                                <input asp-for="VisitDate" type="date" class="form-control" />
+                                                                <span asp-validation-for="VisitDate" class="text-danger"></span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <table cellpadding="5">
+                                                                    <tr rowspan="4">
+                                                                        <td><b>Appointment Time:</b></td>
+
+
+                                                                        <td>
+                                                                            @Html.RadioButtonFor(m => m.AppointmentTime, "1PM-2PM")1PM-2PM<hr />
+
+
+                                                                        @Html.RadioButtonFor(m => m.AppointmentTime, "2PM-3PM")2PM-2PM<hr />
+
+
+                                                                        @Html.RadioButtonFor(m => m.AppointmentTime, "3PM-4PM")3PM-4PM<hr />
+
+
+                                                                        @Html.RadioButtonFor(m => m.AppointmentTime, "4PM-5PM")4PM-5PM<hr />
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="submit" value="Create" class="btn btn-primary" />
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
